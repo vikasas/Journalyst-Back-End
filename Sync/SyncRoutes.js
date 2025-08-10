@@ -1,6 +1,6 @@
 const express = require("express");
 const routes= express.Router();
-const { syncTrade } = require("../Services/TradesData");
+const { syncTrade } = require("../Services/SyncService");
 const { refreshToken } = require("../Services/TokenGenerate");
 
 routes.get("/info/:userId" , (req , res) => {
